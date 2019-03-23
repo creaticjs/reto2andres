@@ -204,7 +204,12 @@ function stringtonumber(){
   
 }
 
-function circulo(){
+function circulo(radio){
 
-    
+  var circunferencia= 2*Math.PI*radio;
+  var area=Math.PI*radio*radio;
+  console.log(circunferencia);
+  document.getElementById("datoscirculo").innerHTML="<h6>El area es : </h6> "+
+   area +" <h6>La circunferencia es : </h6>"+ circunferencia;
+
 }
